@@ -47,11 +47,11 @@
             </section>
             <section class="min.h.screen flex items.center mx.4">
                 <div class="container">
-                    <div class="img_wrapper" onclick="openImage(this)">
+                    <div class="img_wrapper" id="imgeonee">
                             <img src="./image/img1.jfif" alt="girl" />
-                        <p class="imagename" id="img1">img1</p>
+                        <p id="img1">img1</p>
                     </div>
-                    <div class="img_wrapper">
+                    <div class="img_wrapper" id="img22">
                         <img src="./image/img2.jfif" alt="girl" />
                         <p class="imagename" id="img2">img2</p>
                     </div>
@@ -89,10 +89,8 @@
         </article>
     </main>
 
-    <script>
-        function openImage(param) {
-             alert(param.children[0].src)
-        }
+    <script src="./index.js">
+        
     </script>
 </body>
 </html>
