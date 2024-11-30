@@ -1,0 +1,16 @@
+.imagename{
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(18, 127, 131);
+    text-align: center;
+    background-color: rgb(217, 231, 243);
+    
+}
+#topic{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(189, 76, 76);
+    text-align: center;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+     <script src="https://cdn.tailwind.css.com"></script>
+</head>
+<style>
+    .container > div{
+        height: 300px;
+        width: calc(94% / 3);
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .imagename{
+        position: absolute;
+        bottom: 5px;
+        color: brown;
+
+    }
+    .img_wrapper{
+        position: relative;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        margin: 10px;
+        
+    }
+</style>
+<body>
+    <main>
+        <article>
+            <section>
+                <div>
+                    <h1 style="font-size: 50px; color: brown; padding-left: 38%;" id="Project">My First Project</h1>
+                </div>
+            </section>
+            <section class="min.h.screen flex items.center mx.4">
+                <div class="container">
+                    <div class="img_wrapper" onclick="openImage(this)">
+                            <img src="./image/img1.jfif" alt="girl" />
+                        <p class="imagename" id="img1">img1</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img 2.jfif" alt="girl" />
+                        <p class="imagename" id="img2">img2</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img3.jfif" alt="girl" />
+                        <p class="imagename">img3</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img4.jfif" alt="girl" />
+                        <p class="imagename">img4</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img5.jfif" alt="girl" />
+                        <p class="imagename">img5</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img6.jfif" alt="girl" />
+                        <p class="imagename">img6</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img7.jfif" alt="girl" />
+                        <p class="imagename">img7</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img9.jfif" alt="girl" />
+                        <p class="imagename">img9</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./image/img11.jfif" alt="girl" />
+                        <p class="imagename">img11</p>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+    <script>
+        function openImage(param) {
+             alert(param.children[0].src)
+        }
+    </script>
+</body>
+</html>
